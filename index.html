@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    color: {
+                        clifford: '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="flex items-center justify-center h-screen bg-violet-900">
+        <div class="space-y-4">
+            <h1 class="font-bold italic text-center text-white text-2xl capitalize">Discount calculation with coupon</h1>
+            <div class="bg-white w-1/2 mx-auto border-2 p-2 rounded-lg shadow-xl">
+                <img src="images/jacket.png" class="w-full" alt="">
+                <h1 class="text-green-600 font-medium text-xl capitalize pl-10">Maxaos winter Hoody</h1>
+                <p class="font-bold text-2xl text-blue-600 capitalize pl-10 mb-1">price: $<span id="price">764</span></p>
+                <div class="rounded space-y-3 px-10">
+                    <input type="text" id="coupon" class="block bg-green-500 text-whtie placeholder:text-white w-full px-2 py-1 placeholder:capitalize border-2 border-black" placeholder="Write Dom to get 30% discount">
+                    <button id="btn" class="px-3 py-1 bg-red-700 font-semibold text-white text-lg rounded-lg border-2 border-transparent hover:bg-white hover:text-red-700 hover:border-2 hover:border-red-700 duration-300 uppercase">Apply</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
